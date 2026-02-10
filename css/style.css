@@ -1,0 +1,163 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= GLOBAL BODY ================= */
+body {
+  font-family: "Segoe UI", sans-serif;
+
+  /* Black → Purple smooth gradient at 45 degrees */
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #2b0033,
+    #4b0066
+  );
+
+  background-attachment: fixed;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+
+  /* Glassmorphism effect */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Navbar title */
+header h1 {
+  font-size: 24px;
+}
+
+/* Navbar links */
+nav a {
+  margin-left: 20px;
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+
+  /* Smooth hover animation */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #d28cff;
+}
+
+/* ================= SEARCH ================= */
+.search-section {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Search input */
+#searchInput {
+  width: 60%;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+/* Novel count label */
+#countLabel {
+  display: block;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+/* ================= CAROUSEL ================= */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Arrow buttons */
+.arrow {
+  font-size: 35px;
+  background: none;
+  border: none;
+
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Arrow hover */
+.arrow:hover {
+  color: #d28cff;
+  transform: scale(1.2);
+}
+
+/* Novel tiles container */
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Individual novel tile */
+.tile {
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Tile hover */
+.tile:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ================= PAGE CONTENT ================= */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #7b2cbf;
+  color: white;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+button:hover {
+  background: #9d4edd;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}

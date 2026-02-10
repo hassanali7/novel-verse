@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>NovelVerse</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <!-- This navbar is reused on ALL pages -->
+  <header>
+    <h1>📖 NovelVerse</h1>
+    <nav>
+      <!-- Navigation links -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= SEARCH SECTION ================= -->
+  <section class="search-section">
+    <!-- Search bar -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search novels by title..."
+    >
+
+    <!-- Label showing novel counts -->
+    <span id="countLabel"></span>
+  </section>
+
+  <!-- ================= NOVEL CAROUSEL ================= -->
+  <section class="carousel-container">
+
+    <!-- Previous arrow -->
+    <button class="arrow" id="prevBtn">❮</button>
+
+    <!-- Container holding novel tiles -->
+    <div class="carousel" id="novelCarousel"></div>
+
+    <!-- Next arrow -->
+    <button class="arrow" id="nextBtn">❯</button>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 NovelVerse — Read. Dream. Repeat.</p>
+  </footer>
+
+  <!-- JavaScript files -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
